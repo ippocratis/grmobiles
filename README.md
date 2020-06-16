@@ -20,4 +20,4 @@ User id,chat id,ban,unban,notes(hardcoded must be created in src/memo.js),
 Hushtags(hardcoded must be created in src/hashtag.js), pin,unpin,insult,slap .
  
 
-Read the commends on bot.js and src files to make the bot suit your needs.
+Read the comments on bot.js and src files to make the bot suit your needs.

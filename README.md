@@ -9,9 +9,13 @@ read the code, read the commnets.
 Build locally and deploy.
 
 Minimum requirements
-pkg install node or (https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions-enterprise-linux-fedora-and-snap-packages)
-npm install telegraf
-npm install ms
+
+>pkg install node 
+or (https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions-enterprise-linux-fedora-and-snap-packages)
+
+>npm install telegraf
+
+>npm install ms
 
 It can welcome new members in groups. Mute them until a custom answers is given to a custom question.
 Ban or kick them if no correct answer is given our just keep them muted

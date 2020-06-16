@@ -3,11 +3,11 @@ module.exports = (bot) => {
 
 const Telegram = require('telegraf/telegram')
 
-const telegram = new Telegram('xxx');
+const telegram = new Telegram('xxx');  //bot token
 
 
     //unrestrict group id
-    const groupId = -xxx
+    const groupId = -xxx  //group id
 
 //restrict options
 const options = {
@@ -41,23 +41,24 @@ const options = {
     //unstfu
     
 
-    bot.command('unstfu', admin((ctx, next) => {
+    bot.command('unmute', admin((ctx, next) => {
         if (ctx.message.reply_to_message && (ctx.message.reply_to_message.from.id === xxx || ctx.message.reply_to_message.from.id === xxx || ctx.message.reply_to_message.from.id === xxx || ctx.message.reply_to_message.from.id === xxx || ctx.message.reply_to_message.from.id === xxx)) {   
-        ctx.reply(" αυτος ειναι admin ρε " )
+        ctx.reply(" xxx " )  //what to reply when using command on admin
         }
         else if (ctx.message.reply_to_message) {
         ctx.restrictChatMember(ctx.message.reply_to_message.from.id, unoptions) // ctx.tg.restrictChatMember(groupId, ctx.from.id, unoptions) 
         ctx.reply("ok o "+ ` ${ctx.message.reply_to_message.from.first_name}` + " μπορει να μιλήσει τώρα " )
-        }
+        } //what to reply when unmuting 
         else if (ctx.message.reply_to_message === undefined) {
-            ctx.reply('πρεπει να κανεις reply ρε')}
+            ctx.reply('πρεπει να κανεις reply ρε')} //what to reply when not replyed to a message
         else {ctx.reply('admins command φιλε')}
         next(ctx)
         }))
 
 
  //resctrict command
- bot.command('stfu', admin((ctx, next) => {
+	//read comments from mute command 
+ bot.command('mute', admin((ctx, next) => {
     if (ctx.message.reply_to_message && (ctx.message.reply_to_message.from.id === xxx || ctx.message.reply_to_message.from.id === xxx || ctx.message.reply_to_message.from.id === xxx || ctx.message.reply_to_message.from.id === xxx || ctx.message.reply_to_message.from.id === xxx)) {   
     ctx.reply(" αυτος ειναι admin ρε " )
     }
@@ -74,9 +75,10 @@ const options = {
 
     //ban command
  
-    
+    	//read comments from mute command 
 
-    bot.command('goaway', admin((ctx, next) => {
+
+    bot.command('ban', admin((ctx, next) => {
         if (ctx.message.reply_to_message && (ctx.message.reply_to_message.from.id === xxx || ctx.message.reply_to_message.from.id === xxx || ctx.message.reply_to_message.from.id === xxx || ctx.message.reply_to_message.from.id === xxx || ctx.message.reply_to_message.from.id === xxx)) {   
             ctx.reply(" αυτος ειναι admin ρε " )
         }
@@ -91,8 +93,10 @@ const options = {
         }))
 
 //unban
+		//read comments from mute command 
+
 /bot.command('canjoin', admin((ctx, next) => {
-    if (ctx.message.reply_to_message && (ctx.message.reply_to_message.from.id === 531648989 || ctx.message.reply_to_message.from.id === xxx || ctx.message.reply_to_message.from.id === xxx || ctx.message.reply_to_message.from.id === xxx || ctx.message.reply_to_message.from.id === xxx)) {   
+    if (ctx.message.reply_to_message && (ctx.message.reply_to_message.from.id === xxx || ctx.message.reply_to_message.from.id === xxx || ctx.message.reply_to_message.from.id === xxx || ctx.message.reply_to_message.from.id === xxx || ctx.message.reply_to_message.from.id === xxx)) {   
         //ctx.reply(" αυτος ειναι admin ρε " )
     }
     else if (ctx.message.reply_to_message) {
@@ -109,25 +113,26 @@ const options = {
 //id
     bot.command('id', admin((ctx, next) => {
         if (ctx.message.reply_to_message === undefined) {
-            ctx.reply('πρεπει να κανεις reply ρε')
+            ctx.reply('πρεπει να κανεις reply ρε') //need to reply to someones message to get   its id and if he's bot
            
         }
         else {
             ctx.reply("το id ειναι"+ ` ${ctx.message.reply_to_message.from.id} ` + ' user is bot? = ' + ` ${ctx.message.reply_to_message.from.is_bot} `    );
-           }
+           } 
             next(ctx)
         }))
 
   //chatid
+	
     bot.command("chatid", (ctx, next) => {
-      ctx.reply("το id ειναι"+ ` ${ctx.chat.id}`  );
+      ctx.reply("το id ειναι"+ ` ${ctx.chat.id}`  ); //customise the text returned with the chat id number
       next(ctx);
       })
 
 //pin
 bot.command("pinit", (ctx, next) => {
     if (ctx.message.reply_to_message === undefined) {
-        ctx.reply('πρεπει να κανεις reply ρε')
+        ctx.reply('πρεπει να κανεις reply ρε') //reply to a message
     }
     else {
     telegram.pinChatMessage(ctx.chat.id, ctx.message.reply_to_message.message_id);

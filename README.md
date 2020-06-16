@@ -1,6 +1,11 @@
 # grmobiles
 Shelf hosting telegram nodejs\telegraf admin bot.
 
+this is not a ready to use bot.
+its a number of example comands and templates that needs to be edited by you to be functional.
+everything is explained in the comments inside the code.
+read the code, read the commnets.
+
 Build locally and deploy.
 
 Minimum requirements

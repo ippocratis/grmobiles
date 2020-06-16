@@ -58,7 +58,7 @@ module.exports = (bot) => {
     //action , let message and send message arg must contain same callback data in this temppppplate its (three)
 
      bot.action('thee', ctx => {
-       let threeMessage = `Μετατροπή του file system από ext4 σε f2fs στις συμβατές ρομ με στόχο μεγαλύτερες ταχύτητες ανάγνωσης εγγραφής και άρα την ταχύτερη απόκριση του`;
+       let threeMessage = `xxx`; //message text
        ctx.deleteMessage();
        bot.telegram.sendMessage(ctx.chat.id, threeMessage,
          {

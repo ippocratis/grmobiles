@@ -16,8 +16,8 @@ const fs = require('fs')
 
 const { admin } = require('telegraf')
 
-const memoCommand = require('./src/commands/memo');
-memoCommand(bot);
+const notesCommand = require('./src/commands/notes');
+notesCommand(bot);
 
 const allfilters = require('./src/filters/filters');
 allfilters(bot);
@@ -195,3 +195,4 @@ bot.on('message', (ctx, next) => {
 
       
 bot.launch();
+ 

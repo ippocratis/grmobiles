@@ -1,5 +1,7 @@
 module.exports = (bot) => {
 
+    //thats a funny command that gives back a random insult as a reply . code snipset kangded from @TwitFace
+    
     const chars = {
         '&quot;': `"`,
         '&gt;': `>`,

@@ -9,6 +9,7 @@ read the code, read the commnets.
 Build locally and deploy.
 
 Minimum requirements
+pkg install node or (https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions-enterprise-linux-fedora-and-snap-packages)
 npm install telegraf
 npm install ms
 
@@ -21,3 +22,18 @@ Hushtags(hardcoded must be created in src/hashtag.js), pin,unpin,insult,slap .
  
 
 Read the comments on bot.js and src files to make the bot suit your needs.
+
+to deploy to heroku
+make a heroku acount
+install heroku cli with sudo snap install --classic heroku
+Go to your dashboard
+Select “Create new app” (top right)
+Name your app something (only letters, numbers, and dashes)
+Click “Create App”
+open terminal inside your root bot folder
+heroku login
+git init
+heroku git:remote -a your-app-name
+git add .
+git commit -am "commiting the code"
+git push heroku master

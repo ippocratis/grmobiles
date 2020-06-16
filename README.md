@@ -1,5 +1,5 @@
 # grmobiles
-Shelf hosting telegram nodejs\telegraf admin bot.
+Shelf hosting , long polling telegram nodejs\telegraf admin bot.
 
 this is not a ready to use bot.
 its a number of example comands and templates that needs to be edited by you to be functional.

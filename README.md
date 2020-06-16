@@ -26,15 +26,27 @@ Read the comments on bot.js and src files to make the bot suit your needs.
 to deploy to heroku
 
 >make a heroku acount  
+
 >install heroku cli with sudo snap install --classic heroku
+
 >Go to your dashboard
+
 >Select “Create new app” (top right)
+
 >Name your app something (only letters, numbers, and dashes)
+
 >Click “Create App”
+
 >open terminal inside your root bot folder
+
 >heroku login
+
 >git init
+
 >heroku git:remote -a your-app-name
+
 >git add .
+
 >git commit -am "commiting the code"
+
 >git push heroku master

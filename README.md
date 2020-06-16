@@ -28,6 +28,7 @@ Hushtags(hardcoded must be created in src/hashtag.js), pin,unpin,insult,slap .
 Read the comments on bot.js and src files to make the bot suit your needs.
 
 to deploy to heroku
+Procfile is needed . This is a file called exactly “Procfile” in your node directory with a single line
 
 >make a heroku acount  
 

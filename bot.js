@@ -1,5 +1,5 @@
 // Utils
-const Telegraf = require('telegraf'); //npm install telegraf
+const Telegraf = require('telegraf'); //npm install telegraf 
 
 const Telegram = require('telegraf/telegram')
 

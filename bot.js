@@ -20,7 +20,7 @@ const notesCommand = require('./src/commands/notes');
 notesCommand(bot);
 
 const allfilters = require('./src/filters/filters');
-allfilters(bot);
+allfilters(bot); 
 
 const restricts = require('./src/commands/restricts');
 restricts(bot);

@@ -17,6 +17,10 @@ or (https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linu
 
 >npm install ms
 
+>npm install axios
+
+>npm install quickchart-js
+
 >a bot token . go to @BotFather in telegram , type /newbot and follow instruction . after creating type /mybots , select your bot and hit api token . 
 
 It can welcome new members in groups. Mute them until a custom answers is given to a custom question.

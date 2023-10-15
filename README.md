@@ -1,4 +1,4 @@
-# grmobiles
+# tg-group
 Shelf hosting , long polling telegram nodejs\telegraf admin bot.
 
 this is not a ready to use bot.
